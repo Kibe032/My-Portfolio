@@ -1,0 +1,13 @@
+[17-Oct-2024 09:46:51 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-content\plugins\elementor\includes\template-library\manager.php:485
+Stack trace:
+#0 [internal function]: Elementor\TemplateLibrary\Manager->import_template(Array)
+#1 C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-content\plugins\elementor\includes\template-library\manager.php(611): call_user_func(Array, Array)
+#2 C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-content\plugins\elementor\includes\template-library\manager.php(644): Elementor\TemplateLibrary\Manager->handle_ajax_request('import_template', Array)
+#3 [internal function]: Elementor\TemplateLibrary\Manager->Elementor\TemplateLibrary\{closure}(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(176): call_user_func(Object(Closure), Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-includes\class-wp-hook.php(324): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#6 C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#9 {main}
+  thrown in C:\Users\Kibe\Local Sites\my-portfolio\app\public\wp-content\plugins\elementor\includes\template-library\manager.php on line 485
